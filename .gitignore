@@ -1,6 +1,10 @@
 # Created by .ignore support plugin (hsz.mobi)
 /constants.py
-Будет удалено .gitignore
+.gitignore
+.idea/
+__pycache__/
+constants.py
+/chat.db
 Будет удалено .idea/
 Будет удалено __pycache__/
-Будет удалено constants.py
+Будет удалено chat.db

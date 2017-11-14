@@ -1,5 +1,6 @@
 import telebot
 import constants
+import sqliteworker
 
 bot = telebot.TeleBot(constants.token)
 
@@ -14,7 +15,7 @@ def handle_text(message):
     bot.send_message(message.chat.id, "Пользователь отмечен как администратор")
     adminchatid = message.chat.id
     bot.send_message(message.chat.id, adminchatid)
-
+    sqliteworker.addadminchatid()
 
 
 bot.polling(none_stop=True, interval=0)
