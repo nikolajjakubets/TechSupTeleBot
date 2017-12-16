@@ -6,3 +6,4 @@ def addadminchatid():
     curs.execute('SELECT * FROM chat')
     conn.commit()
 
+// тест gpg подписи
